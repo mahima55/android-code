@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".stress_activity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="20dp"
+        android:text="Here are some of the tips to reduce stress"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="35dp"
+        android:paddingTop="20dp"
+        android:text="1.The benefits are strongest when you exercise regularly. People who exercise
+         regularly are less likely to experience anxiety than those who don’t exercise"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="35dp"
+        android:paddingTop="20dp"
+        android:text="2.Caffeine is a stimulant found in coffee, tea, chocolate and energy drinks.
+        High doses can increase anxiety"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:layout_below="@+id/text2"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="35dp"
+        android:paddingTop="20dp"
+        android:text="3.Mindfulness describes practices that anchor you to the present moment.
+It can help combat the anxiety-inducing effects of negative thinking "
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_below="@+id/text3"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="35dp"
+        android:paddingTop="20dp"
+        android:text="4.Social support from friends and family can help you get through stressful times.
+Being part of a friend network gives you a sense of belonging and self-worth, which can help you in tough times." />
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:layout_below="@+id/text4"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="35dp"
+        android:paddingTop="20dp"
+        android:text="5.Laughter can also help improve your immune system and mood.
+A study among people with cancer found that people in the laughter intervention group experienced more stress relief than those who were simply distracted" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/yoga_data"
+        android:layout_width="429dp"
+        android:layout_height="105dp"
+        android:layout_below="@+id/text5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="15dp">
+
+
+        <TextView
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Yoga positions to reduce stress"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="68dp"
+            android:layout_height="78dp"
+            app:srcCompat="@drawable/yoga" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
+
+</ScrollView>

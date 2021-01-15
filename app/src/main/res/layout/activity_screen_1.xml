@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/cardview_compat_inset_shadow"
+
+    tools:context=".Screen_1">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/stress_module"
+        android:layout_width="368dp"
+        android:layout_height="84dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="21dp"
+
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+
+        <LinearLayout
+            android:layout_width="309dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="328dp"
+                android:layout_height="52dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+
+                android:fontFamily="sans-serif-light"
+                android:text="Tips for your Anxiety"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="309dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardResult"
+        android:layout_width="473dp"
+        android:layout_height="409dp"
+        android:layout_below="@+id/stress_module"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp">
+
+        <TextView
+            android:id="@+id/text_result"
+            android:layout_width="345dp"
+            android:layout_height="409dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="9dp"
+            android:fontFamily="sans-serif-light"
+
+            android:text="Current Health Status"
+            android:textSize="30dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/manual_data"
+        android:layout_width="476dp"
+        android:layout_height="94dp"
+        android:layout_below="@+id/cardResult"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="90dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="15dp">
+
+
+        <TextView
+            android:layout_width="362dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Add data manually"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/track_button"
+        android:layout_width="198dp"
+        android:layout_height="69dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="0dp"
+        android:text="Track"
+        android:backgroundTint="#2646F8"/>
+
+    <Button
+        android:id="@+id/save_button"
+        android:onClick="sendButton"
+        android:layout_width="184dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="0dp"
+        android:text="Save Data"
+        android:backgroundTint="#2646F8"/>
+
+
+</RelativeLayout>
+
+
+</ScrollView>
